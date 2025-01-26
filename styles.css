@@ -61,6 +61,11 @@ body {
   width: 65vw;
 }
 
+.content-header {
+  margin: 50px;
+  width: 80%;
+}
+
 form {
   border: 1px solid #edeff4;
   box-shadow: 1.5px 3px 3px hsla(0, 0%, 50%, 0.45);
