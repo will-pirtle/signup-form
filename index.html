@@ -12,17 +12,59 @@
       <img src="./images/odin-logo-lined.png" alt="Odin Logo">
       <h1>ODIN</h1>
     </div>
-    <p class="background-footer">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a>.</p>
+    <p class="background-footer">Photo by 
+      <a href="#">Halie West</a> on <a href="#">Unsplash</a>.
+    </p>
   </div>
+
   <div class="content-container">
-    <h2 class="form-header">
+    <h2 class="content-header">
       This is not a real online service! You know know you need something like
       this in your life to help you realize your deepest dreams. Sign up now to
       get started.
       <br>
-      You know you want to.
+      You <em>know</em> you want to.
     </h2>
-    <div class="form-container"></div>
+    <form id="signup-form" action="#">
+      <h2 class="form-header">Let's do this!</h2>
+      <div class="inputs-container">
+        <div class="form-input">
+          <label for="firstname">FIRST NAME</label>
+          <input type="text" name="firstname" id="firstname">
+        </div>
+        <div class="form-input">
+          <label for="lastname">LAST NAME</label>
+          <input type="text" name="lastname" id="lastname">
+        </div>
+        <div class="form-input">
+          <label for="mail">EMAIL</label>
+          <input 
+            type="email" 
+            name="mail" 
+            id="mail"
+            placeholder="example@gmail.com">
+        </div>        
+        <div class="form-input">
+          <label for="phone">PHONE</label>
+          <input 
+            type="tel" 
+            name="phone" 
+            id="phone"
+            placeholder="123-456-7890"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>        
+        <div class="form-input">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" minlength="8" required>
+        </div>        
+        <div class="form-input">
+          <label for="confirm-pw">CONFIRM PASSWORD</label>
+          <input type="password" name="confirm-pw" id="confirm-pw" minlength="8" required>
+        </div>        
+      </div>
+    </form>
+    <button type="submit" form="signup-form">Create Account</button>
+    <p>Already have an account? <a href="#">Log In</a></p>
   </div>
 </body>
 </html>
